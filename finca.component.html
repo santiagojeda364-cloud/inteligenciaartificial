@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Registro de Finca (Codornices)</h2>
+
+  <form (ngSubmit)="guardar()">
+    
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="finca.nombre" name="nombre" required>
+
+    <label>Propietario:</label>
+    <input type="text" [(ngModel)]="finca.propietario" name="propietario" required>
+
+    <label>Ubicación:</label>
+    <input type="text" [(ngModel)]="finca.ubicacion" name="ubicacion">
+
+    <label>Teléfono:</label>
+    <input type="text" [(ngModel)]="finca.telefono" name="telefono">
+
+    <label>N° Codornices:</label>
+    <input type="number" [(ngModel)]="finca.num_animales" name="num_animales">
+
+    <button type="submit">Guardar</button>
+  </form>
+</div>
