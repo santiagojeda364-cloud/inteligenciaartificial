@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Evaluación de Bienestar (Codornices)</h2>
+
+  <label>Acceso a agua:</label>
+  <select [(ngModel)]="evaluacion.agua" name="agua">
+    <option>Bueno</option>
+    <option>Regular</option>
+    <option>Malo</option>
+  </select>
+
+  <label>Alimentación:</label>
+  <select [(ngModel)]="evaluacion.alimentacion" name="alimentacion">
+    <option>Bueno</option>
+    <option>Regular</option>
+    <option>Malo</option>
+  </select>
+
+  <label>Espacio:</label>
+  <select [(ngModel)]="evaluacion.espacio" name="espacio">
+    <option>Bueno</option>
+    <option>Regular</option>
+    <option>Malo</option>
+  </select>
+
+  <button (click)="calcular()">Calcular Diagnóstico</button>
+
+  <h3 *ngIf="resultado">Resultado: {{resultado}}</h3>
+</div>
